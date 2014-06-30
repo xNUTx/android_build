@@ -42,10 +42,9 @@ endif
 
 # This specifies toolchain being used. In case of issues, stick with 4.7
 # 4.8 is default in my optimizations, as it gives noticable performance boost
-# Don't use 4.9 unless you feel confident, varios strange libstlport segmentation faults may happen (bootloop)
 ifeq ($(strip $(TARGET_GCC_VERSION_EXP)),)
 #TARGET_GCC_VERSION := 4.7
-TARGET_GCC_VERSION := 4.9
+TARGET_GCC_VERSION := 4.8
 else
 TARGET_GCC_VERSION := $(TARGET_GCC_VERSION_EXP)
 endif
