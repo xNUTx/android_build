@@ -823,6 +823,9 @@ INSTALLED_RECOVERYIMAGE_TARGET :=
 RECOVERY_RESOURCE_ZIP :=
 endif
 
+.PHONY: recoverycpio
+recoverycpio: $(recovery_uncompressed_ramdisk)
+
 .PHONY: recoveryimage
 recoveryimage: $(INSTALLED_RECOVERYIMAGE_TARGET) $(RECOVERY_RESOURCE_ZIP)
 
